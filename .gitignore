@@ -1,0 +1,17 @@
+# Ignore log files and temporary files
+logs/
+*.log
+logs
+plugins
+# Ignore Docker volumes
+postgres_db/
+redis/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment files
+.env
