@@ -1,7 +1,8 @@
 # Ignore log files and temporary files
 logs/
 *.log
-
+logs
+plugins
 # Ignore Docker volumes
 postgres_db/
 redis/
