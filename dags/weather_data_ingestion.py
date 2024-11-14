@@ -3,6 +3,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 import requests
 import psycopg2
+import json
 
 # OpenWeather API credentials and endpoint
 API_KEY = "f640156891b8f1e737b5973e68a22c80"
@@ -30,7 +31,10 @@ def fetch_weather_data():
     conn = psycopg2.connect(**DB_CONNECTION)
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS raw_weather_data (id SERIAL PRIMARY KEY, data JSONB, ingestion_time TIMESTAMP);")
-    cursor.execute("INSERT INTO raw_weather_data (data, ingestion_time) VALUES (%s, %s);", (data, datetime.now()))
+    cursor.execute(
+    "INSERT INTO raw_weather_data (data, ingestion_time) VALUES (%s, %s);",
+    (json.dumps(data), datetime.now())
+    )
     conn.commit()
     cursor.close()
     conn.close()
