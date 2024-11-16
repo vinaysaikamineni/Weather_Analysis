@@ -7,7 +7,7 @@ import json
 
 # OpenWeather API credentials and endpoint
 API_KEY = "f640156891b8f1e737b5973e68a22c80"
-BASE_URL = "https://api.openweathermap.org/data/2.5/onecall"
+BASE_URL = "https://api.openweathermap.org/data/3.0/onecall"
 
 # PostgreSQL connection details
 DB_CONNECTION = {
@@ -43,7 +43,7 @@ def fetch_weather_data():
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
-    "start_date": datetime(2024, 11, 1),
+    "start_date": datetime(2023, 1, 1),
     "email_on_failure": True,
     "email_on_retry": False,
     "retries": 1,
