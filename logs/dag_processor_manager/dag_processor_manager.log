@@ -40088,3 +40088,403 @@ File Path                                         PID    Runtime      # DAGs    
 /opt/airflow/dags/weather_data_transformation.py                           1           0  0.13s           2024-11-16T08:11:24
 ================================================================================
 [2024-11-16T08:11:55.996+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2024-11-18T19:01:50.847+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2024-11-18T19:01:50.859+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-11-18T19:01:50.860+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-11-18T19:01:50.862+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-11-18T19:01:50.959+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-11-18T19:01:51.220+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/data_transform_test.py                                   0           0
+/opt/airflow/dags/weather_data_ingestion.py          30  0.06s             0           0
+/opt/airflow/dags/weather_data_quality_checks.py                           0           0
+/opt/airflow/dags/weather_data_transformation.py     31  0.04s             0           0
+================================================================================
+[2024-11-18T19:02:21.891+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.48s           2024-11-18T19:01:52
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.80s           2024-11-18T19:01:51
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.41s           2024-11-18T19:01:52
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.75s           2024-11-18T19:01:51
+================================================================================
+[2024-11-18T19:02:51.929+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.33s           2024-11-18T19:02:23
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.24s           2024-11-18T19:02:23
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.36s           2024-11-18T19:02:23
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.32s           2024-11-18T19:02:23
+================================================================================
+[2024-11-18T19:03:22.770+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.18s           2024-11-18T19:02:54
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.24s           2024-11-18T19:02:54
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.19s           2024-11-18T19:02:54
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.23s           2024-11-18T19:02:54
+================================================================================
+[2024-11-18T19:03:53.135+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.28s           2024-11-18T19:03:25
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.54s           2024-11-18T19:03:25
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.29s           2024-11-18T19:03:25
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.56s           2024-11-18T19:03:25
+================================================================================
+[2024-11-18T19:04:23.977+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.17s           2024-11-18T19:03:56
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.23s           2024-11-18T19:03:56
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:03:56
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.24s           2024-11-18T19:03:56
+================================================================================
+[2024-11-18T19:04:54.054+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.25s           2024-11-18T19:04:27
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.22s           2024-11-18T19:04:27
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.22s           2024-11-18T19:04:27
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.23s           2024-11-18T19:04:27
+================================================================================
+[2024-11-18T19:05:24.750+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.20s           2024-11-18T19:04:58
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.16s           2024-11-18T19:04:58
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.22s           2024-11-18T19:04:58
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.19s           2024-11-18T19:04:58
+================================================================================
+[2024-11-18T19:05:55.531+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.15s           2024-11-18T19:05:29
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.19s           2024-11-18T19:05:29
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.17s           2024-11-18T19:05:29
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.19s           2024-11-18T19:05:29
+================================================================================
+[2024-11-18T19:06:26.247+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.16s           2024-11-18T19:05:59
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.17s           2024-11-18T19:05:59
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.20s           2024-11-18T19:05:59
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.19s           2024-11-18T19:05:59
+================================================================================
+[2024-11-18T19:06:51.165+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-11-18T19:06:51.208+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-11-18T19:06:56.296+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.17s           2024-11-18T19:06:30
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.48s           2024-11-18T19:06:30
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.17s           2024-11-18T19:06:30
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.51s           2024-11-18T19:06:30
+================================================================================
+[2024-11-18T19:07:26.329+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.24s           2024-11-18T19:07:01
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.27s           2024-11-18T19:07:01
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.19s           2024-11-18T19:07:02
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.25s           2024-11-18T19:07:01
+================================================================================
+[2024-11-18T19:07:56.653+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.17s           2024-11-18T19:07:32
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.14s           2024-11-18T19:07:32
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.16s           2024-11-18T19:07:32
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.15s           2024-11-18T19:07:32
+================================================================================
+[2024-11-18T19:08:27.281+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.16s           2024-11-18T19:08:03
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.16s           2024-11-18T19:08:02
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:08:03
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.19s           2024-11-18T19:08:02
+================================================================================
+[2024-11-18T19:08:57.487+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.25s           2024-11-18T19:08:33
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.19s           2024-11-18T19:08:33
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.19s           2024-11-18T19:08:34
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.18s           2024-11-18T19:08:33
+================================================================================
+[2024-11-18T19:09:28.141+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.19s           2024-11-18T19:09:04
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.44s           2024-11-18T19:09:04
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.20s           2024-11-18T19:09:05
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.42s           2024-11-18T19:09:04
+================================================================================
+[2024-11-18T19:09:58.992+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.15s           2024-11-18T19:09:35
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.29s           2024-11-18T19:09:35
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:09:35
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.30s           2024-11-18T19:09:35
+================================================================================
+[2024-11-18T19:10:29.766+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.14s           2024-11-18T19:10:06
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.15s           2024-11-18T19:10:06
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.14s           2024-11-18T19:10:06
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.16s           2024-11-18T19:10:06
+================================================================================
+[2024-11-18T19:11:00.577+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.15s           2024-11-18T19:10:37
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.14s           2024-11-18T19:10:37
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.18s           2024-11-18T19:10:37
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.15s           2024-11-18T19:10:37
+================================================================================
+[2024-11-18T19:11:31.438+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.20s           2024-11-18T19:11:08
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.18s           2024-11-18T19:11:07
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.17s           2024-11-18T19:11:08
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.20s           2024-11-18T19:11:07
+================================================================================
+[2024-11-18T19:11:51.993+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-11-18T19:11:52.035+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-11-18T19:12:02.239+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.18s           2024-11-18T19:11:38
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.16s           2024-11-18T19:11:38
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.20s           2024-11-18T19:11:38
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.19s           2024-11-18T19:11:38
+================================================================================
+[2024-11-18T19:12:33.121+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.16s           2024-11-18T19:12:09
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.24s           2024-11-18T19:12:09
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.21s           2024-11-18T19:12:09
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.23s           2024-11-18T19:12:09
+================================================================================
+[2024-11-18T19:13:04.001+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.18s           2024-11-18T19:12:40
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.16s           2024-11-18T19:12:40
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.22s           2024-11-18T19:12:40
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.18s           2024-11-18T19:12:40
+================================================================================
+[2024-11-18T19:13:34.790+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.16s           2024-11-18T19:13:11
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.15s           2024-11-18T19:13:11
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.18s           2024-11-18T19:13:11
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.16s           2024-11-18T19:13:11
+================================================================================
+[2024-11-18T19:14:04.938+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.17s           2024-11-18T19:13:42
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.23s           2024-11-18T19:13:42
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.26s           2024-11-18T19:13:42
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.23s           2024-11-18T19:13:42
+================================================================================
+[2024-11-18T19:14:35.496+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.16s           2024-11-18T19:14:13
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.18s           2024-11-18T19:14:12
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:14:13
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.20s           2024-11-18T19:14:12
+================================================================================
+[2024-11-18T19:15:06.328+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.17s           2024-11-18T19:14:43
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.14s           2024-11-18T19:14:43
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:14:43
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.17s           2024-11-18T19:14:43
+================================================================================
+[2024-11-18T19:15:37.084+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.14s           2024-11-18T19:15:14
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.13s           2024-11-18T19:15:14
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:15:14
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.14s           2024-11-18T19:15:14
+================================================================================
+[2024-11-18T19:16:07.915+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.20s           2024-11-18T19:15:45
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.17s           2024-11-18T19:15:45
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:15:45
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.15s           2024-11-18T19:15:45
+================================================================================
+[2024-11-18T19:16:38.601+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.14s           2024-11-18T19:16:16
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.20s           2024-11-18T19:16:16
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.15s           2024-11-18T19:16:16
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.17s           2024-11-18T19:16:16
+================================================================================
+[2024-11-18T19:16:52.016+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-11-18T19:16:52.056+0000] {manager.py:761} INFO - There are 4 files in /opt/airflow/dags
+[2024-11-18T19:17:09.331+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.13s           2024-11-18T19:16:46
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.12s           2024-11-18T19:16:46
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.13s           2024-11-18T19:16:46
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.13s           2024-11-18T19:16:46
+================================================================================
+[2024-11-18T19:17:40.063+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.12s           2024-11-18T19:17:17
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.15s           2024-11-18T19:17:17
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.13s           2024-11-18T19:17:17
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.15s           2024-11-18T19:17:17
+================================================================================
+[2024-11-18T19:18:10.834+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.15s           2024-11-18T19:17:48
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.21s           2024-11-18T19:17:48
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.14s           2024-11-18T19:17:48
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.22s           2024-11-18T19:17:48
+================================================================================
+[2024-11-18T19:18:40.960+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.42s           2024-11-18T19:18:19
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.24s           2024-11-18T19:18:19
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.53s           2024-11-18T19:18:19
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.27s           2024-11-18T19:18:19
+================================================================================
+[2024-11-18T19:19:11.388+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/data_transform_test.py                                   1           0  0.20s           2024-11-18T19:18:50
+/opt/airflow/dags/weather_data_ingestion.py                                1           0  0.39s           2024-11-18T19:18:50
+/opt/airflow/dags/weather_data_quality_checks.py                           1           0  0.47s           2024-11-18T19:18:51
+/opt/airflow/dags/weather_data_transformation.py                           1           0  0.50s           2024-11-18T19:18:50
+================================================================================
+[2024-11-18T19:19:21.613+0000] {manager.py:1134} WARNING - Skipping processing of missing file: /opt/airflow/dags/weather_data_ingestion.py
+[2024-11-18T19:19:21.614+0000] {manager.py:1134} WARNING - Skipping processing of missing file: /opt/airflow/dags/weather_data_quality_checks.py
+[2024-11-18T19:19:21.615+0000] {manager.py:1134} WARNING - Skipping processing of missing file: /opt/airflow/dags/weather_data_transformation.py
+[2024-11-18T19:19:39.198+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
