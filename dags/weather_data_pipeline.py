@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.utils.email import send_email
 from datetime import datetime, timedelta
 import requests
 import psycopg2
@@ -21,8 +22,8 @@ DB_CONNECTION = {
 
 def fetch_weather_data():
     params = {
-        "lat": 39.099724,     # Example latitude for New York
-        "lon": -94.578331,    # Example longitude for New York
+        "lat": 39.099724,     # Example latitude
+        "lon": -94.578331,    # Example longitude
         "appid": API_KEY
     }
     response = requests.get(BASE_URL, params=params)
@@ -125,6 +126,11 @@ def data_quality_checks():
     cursor.close()
     conn.close()
 
+def send_failure_email(context):
+    subject = "Airflow Alert: Data Quality Check Failed"
+    body = f"Task {context['task_instance_key_str']} in DAG {context['dag'].dag_id} failed."
+    send_email("vinaysaikamineni@gmail.com", subject, body)
+
 # Define default args for the DAG
 default_args = {
     "owner": "airflow",
@@ -157,7 +163,9 @@ with DAG(
 
     quality_checks = PythonOperator(
         task_id="run_data_quality_checks",
-        python_callable=data_quality_checks
+        python_callable=data_quality_checks,
+        retries=0,  # No retries for this task
+        on_failure_callback=send_failure_email  # Send email on failure
     )
 
     # Set task dependencies
