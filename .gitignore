@@ -1,9 +1,8 @@
 # Ignore log files and temporary files
 logs/
 *.log
+
 logs/dag_processor_manager/
-*.log
-logs
 plugins
 # Ignore Docker volumes
 postgres_db/
