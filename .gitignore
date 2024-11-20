@@ -15,4 +15,3 @@ __pycache__/
 
 # Ignore environment files
 .env
-data_transform_test.py
