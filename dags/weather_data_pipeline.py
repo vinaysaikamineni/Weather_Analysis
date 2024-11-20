@@ -61,14 +61,17 @@ def transform_weather_data():
         # Access current weather data
         if 'current' in data:
             current_data = data['current']
-            temperatures.append(current_data['temp'])
+            # Convert temperature from Kelvin to Fahrenheit
+            temp_fahrenheit = (current_data['temp'] - 273.15) * 9/5 + 32
+            temperatures.append(temp_fahrenheit)
             humidities.append(current_data['humidity'])
             pressures.append(current_data['pressure'])
         
         # Access daily weather data
         if 'daily' in data:
             for daily_data in data['daily']:
-                temperatures.append(daily_data['temp']['day'])
+                temp_fahrenheit_daily = (daily_data['temp']['day'] - 273.15) * 9/5 + 32
+                temperatures.append(temp_fahrenheit_daily)
                 humidities.append(daily_data['humidity'])
                 pressures.append(daily_data['pressure'])
                 aggregated_data.append(daily_data)  # Store each day’s data
@@ -115,7 +118,7 @@ def data_quality_checks():
     cursor.execute("""
         SELECT COUNT(*)
         FROM transformed_weather_data
-        WHERE avg_temperature < -50 OR avg_temperature > 60
+        WHERE avg_temperature < -50 OR avg_temperature > 140
            OR avg_humidity < 0 OR avg_humidity > 100
            OR avg_pressure < 800 OR avg_pressure > 1100;
     """)
@@ -127,9 +130,9 @@ def data_quality_checks():
     conn.close()
 
 def send_failure_email(context):
-    subject = "Airflow Alert: Data Quality Check Failed"
-    body = f"Task {context['task_instance_key_str']} in DAG {context['dag'].dag_id} failed."
-    send_email("vinaysaikamineni@gmail.com", subject, body)
+   subject = "Airflow Alert: Data Quality Check Failed"
+   body = f"Task {context['task_instance_key_str']} in DAG {context['dag'].dag_id} failed."
+   send_email("vinaysaikamineni@gmail.com", subject, body)
 
 # Define default args for the DAG
 default_args = {
@@ -147,7 +150,7 @@ with DAG(
     "weather_data_pipeline",
     default_args=default_args,
     description="Integrated DAG for Weather Data Pipeline",
-    schedule_interval='@daily',
+    schedule_interval='@hourly',
     catchup=False,
 ) as dag:
 
